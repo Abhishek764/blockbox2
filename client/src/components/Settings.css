@@ -1,0 +1,115 @@
+.settings-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.settings-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  width: min(520px, 90vw);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", sans-serif;
+}
+
+.settings-box h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.settings-note {
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.settings-note a {
+  color: #2980b9;
+}
+
+.settings-box label {
+  display: block;
+  margin: 12px 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.settings-box textarea,
+.settings-box input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 12px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.settings-status {
+  margin: 12px 0 0;
+  padding: 8px 12px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+.settings-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.settings-actions button {
+  padding: 9px 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.settings-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.settings-actions button.primary {
+  background: #2980b9;
+  color: #fff;
+  border-color: #2980b9;
+}
+
+.settings-section {
+  margin: 12px 0;
+}
+
+.settings-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.settings-hint {
+  margin: 4px 0 8px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.settings-hint a {
+  color: #2980b9;
+}

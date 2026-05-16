@@ -9,8 +9,9 @@
 }
 
 .modalContainer {
-  width: 500px;
-  height: 200px;
+  width: 520px;
+  max-height: 80vh;
+  overflow-y: auto;
   border-radius: 12px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -71,12 +72,84 @@
 #cancelBtn {
   background-color: crimson;
 }
-.address {
+.address,
+.share-address {
   display: block;
   margin: auto;
   height: 30px;
   width: 330px;
   text-align: center;
+}
+
+.access-list {
+  margin: 14px 0;
+  text-align: left;
+}
+
+.access-header {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.access-empty {
+  font-size: 13px;
+  color: #888;
+}
+
+.access-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.access-user {
+  font-family: monospace;
+  font-size: 13px;
+  flex: 1;
+}
+
+.access-flag {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.access-flag.on {
+  background: #d4edda;
+  color: #1e7e34;
+}
+
+.access-flag.off {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.access-revoke {
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.access-revoke:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modal-status {
+  margin: 10px 0;
+  padding: 8px 12px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: monospace;
+  word-break: break-word;
 }
 
 input[type="text"]:focus {

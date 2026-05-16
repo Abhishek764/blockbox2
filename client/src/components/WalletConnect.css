@@ -1,0 +1,93 @@
+.wallet-picker {
+  max-width: 460px;
+  margin: 80px auto;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.wallet-picker h2 {
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.wallet-sub {
+  margin-bottom: 24px;
+  color: #555;
+  font-size: 14px;
+}
+
+.wallet-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wallet-btn {
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.wallet-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wallet-btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-btn.metamask {
+  background: #f6851b;
+}
+
+.wallet-btn.phantom {
+  background: #534bb1;
+}
+
+.wallet-error {
+  margin-top: 16px;
+  color: #c0392b;
+  font-size: 13px;
+}
+
+.wallet-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.wallet-pill {
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border-radius: 999px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.wallet-disconnect {
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.wallet-disconnect:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

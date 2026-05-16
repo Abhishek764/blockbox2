@@ -30,12 +30,24 @@
 .button:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
-.address {
+.address,
+.display-address {
   display: block;
   margin: auto;
   height: 30px;
   width: 330px;
   text-align: center;
+}
+
+.display-status {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin: 8px auto;
+  font-family: monospace;
+  font-size: 13px;
 }
 
 input[type="text"]:focus {
